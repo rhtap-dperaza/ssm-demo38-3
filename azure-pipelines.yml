@@ -131,8 +131,6 @@ jobs:
           echo "Performing docker prune (12h buffer)..."
           docker system prune -af --filter "until=12h"
 
-          git config --global --unset credential.helper
-
           # Workspace Scrub
           echo "Cleaning work folder: $(Agent.WorkFolder)"
           cd $(Agent.HomeDirectory)
