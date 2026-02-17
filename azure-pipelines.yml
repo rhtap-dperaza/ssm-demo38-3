@@ -11,8 +11,6 @@ trigger:
 # See https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents
 pool:
   name: rhtap-testing
-  demands:
-      - Agent.Name -equals tssc-testing-agent-1
 
 # Using 'tssc' variable group by default
 # Change accordingly when using a different variable group
